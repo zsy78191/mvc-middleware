@@ -1,6 +1,0 @@
-framework module Pods_mvc_middlewareUITests {
-  umbrella header "Pods-mvc-middlewareUITests-umbrella.h"
-
-  export *
-  module * { export * }
-}
