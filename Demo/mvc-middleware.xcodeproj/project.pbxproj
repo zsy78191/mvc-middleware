@@ -18,6 +18,7 @@
 		D4791CB821DF06E10091EA84 /* mvc_middlewareTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D4791CB721DF06E10091EA84 /* mvc_middlewareTests.m */; };
 		D4791CC321DF06E10091EA84 /* mvc_middlewareUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = D4791CC221DF06E10091EA84 /* mvc_middlewareUITests.m */; };
 		D4791CD421DF07B70091EA84 /* MVCKeyValue.m in Sources */ = {isa = PBXBuildFile; fileRef = D4791CD321DF07B70091EA84 /* MVCKeyValue.m */; };
+		D4F82A9B21E7138900E3870E /* GCDQuene.m in Sources */ = {isa = PBXBuildFile; fileRef = D4F82A9A21E7138900E3870E /* GCDQuene.m */; };
 		E5B64AC4178CF69E1958FD41 /* Pods_mvc_middlewareTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0766EBB79D8F0F0301B227A3 /* Pods_mvc_middlewareTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -64,6 +65,8 @@
 		D4791CC421DF06E10091EA84 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D4791CD221DF07B70091EA84 /* MVCKeyValue.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MVCKeyValue.h; sourceTree = "<group>"; };
 		D4791CD321DF07B70091EA84 /* MVCKeyValue.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MVCKeyValue.m; sourceTree = "<group>"; };
+		D4F82A9921E7138900E3870E /* GCDQuene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDQuene.h; sourceTree = "<group>"; };
+		D4F82A9A21E7138900E3870E /* GCDQuene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDQuene.m; sourceTree = "<group>"; };
 		E3E524FB0CC37AD2EF6F6B23 /* Pods-mvc-middlewareTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mvc-middlewareTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-mvc-middlewareTests/Pods-mvc-middlewareTests.debug.xcconfig"; sourceTree = "<group>"; };
 		FBB483A5170A0217E6A6D316 /* Pods_mvc_middlewareUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_mvc_middlewareUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -179,6 +182,8 @@
 		D4791CD121DF07030091EA84 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				D4F82A9921E7138900E3870E /* GCDQuene.h */,
+				D4F82A9A21E7138900E3870E /* GCDQuene.m */,
 				D4791CD221DF07B70091EA84 /* MVCKeyValue.h */,
 				D4791CD321DF07B70091EA84 /* MVCKeyValue.m */,
 			);
@@ -399,6 +404,7 @@
 				D4791CA321DF06E00091EA84 /* ViewController.m in Sources */,
 				D4791CAE21DF06E10091EA84 /* main.m in Sources */,
 				D4791CA021DF06E00091EA84 /* AppDelegate.m in Sources */,
+				D4F82A9B21E7138900E3870E /* GCDQuene.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -573,7 +579,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ZLQPGKAQFY;
 				INFOPLIST_FILE = "mvc-middleware/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.orzer.mvc-middleware";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -588,7 +597,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ZLQPGKAQFY;
 				INFOPLIST_FILE = "mvc-middleware/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.orzer.mvc-middleware";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -603,7 +615,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ZLQPGKAQFY;
 				INFOPLIST_FILE = "mvc-middlewareTests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.orzer.mvc-middlewareTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -619,7 +635,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ZLQPGKAQFY;
 				INFOPLIST_FILE = "mvc-middlewareTests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.orzer.mvc-middlewareTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -634,7 +654,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ZLQPGKAQFY;
 				INFOPLIST_FILE = "mvc-middlewareUITests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.orzer.mvc-middlewareUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -649,7 +673,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ZLQPGKAQFY;
 				INFOPLIST_FILE = "mvc-middlewareUITests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.orzer.mvc-middlewareUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";

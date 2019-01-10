@@ -12,7 +12,7 @@ typedef void (^_dispatch_block_t_self)(GCDSemaphore* t);
 @interface GCDQuene : NSObject
 
 
-@property (nonatomic, strong, readonly) dispatch_queue_t quene_t;
+@property (nonatomic, readonly) dispatch_queue_t quene_t;
 @property (nonatomic, class,readonly) dispatch_queue_t (^globalQuene)(void);
 @property (nonatomic, class,readonly) dispatch_queue_t (^globalQueneWithPriority)(int priority);
 @property (nonatomic, class,readonly) dispatch_queue_t (^mainQuene)(void);
@@ -52,7 +52,7 @@ typedef void (^_dispatch_block_t_self)(GCDSemaphore* t);
 {
     
 }
-@property (nonatomic, strong, readonly) dispatch_group_t group_t;
+@property (nonatomic, readonly) dispatch_group_t group_t;
 @property (nonatomic, readonly) GCDGroup* (^ async)(dispatch_queue_t,dispatch_block_t);
 @property (nonatomic, readonly) GCDGroup* (^ notify)(dispatch_queue_t,dispatch_block_t);
 
@@ -66,7 +66,7 @@ typedef void (^_dispatch_block_t_self)(GCDSemaphore* t);
 
 +(instancetype)semaphore:(int)value;
 
-@property (nonatomic, strong, readonly) dispatch_semaphore_t semaphore_t;
+@property (nonatomic, readonly) dispatch_semaphore_t semaphore_t;
 @property (nonatomic, readonly) GCDSemaphore* (^ run)(_dispatch_block_t_self);
 @property (nonatomic, readonly) GCDSemaphore* (^ wait)(dispatch_block_t t);
 @property (nonatomic, readonly) void (^ signal)(void);
